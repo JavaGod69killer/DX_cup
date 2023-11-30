@@ -33,7 +33,7 @@
         <div class="input-bx">
           <h2 class="upload-area-title"> Upload file</h2>
           <form action="">
-            <input type="file" id="upload" accept=".png, .jpg" hidden>
+            <input onclick="mDialog()"  type="file" id="upload" accept=".png, .jpg," hidden>
             <label for="upload" class="uploadlabel">
               <span><i class="fa fa-cloud-upload"></i></span>
               <p>Click here</p>
@@ -46,8 +46,8 @@
           <h3 class="uploaded">uploaded documents</h3>
           <div class="showfilebox">
             <div class="left">
-              <span class="filetype">PDF</span>
-              <h3>ravi web</h3>
+              <span class="filetype">PNG and JPG</span>
+              <h3>Deep mind web</h3>
             </div>
             <div class="right">
               <span>&#215;</span>
@@ -56,13 +56,11 @@
          </div>
       </div>
     </div>
-    <!-- <h3>Upload your image</h3>
-    <div class = input>
-        <input type="file" name="file">
-        <input type="submit" name="submit">
-    </div> -->
-
-  <script src="script.js"></script>
- 
+    <div class="words">
+      <div class="border">
+        <p  id="dialog"></p>
+      </div>
+    </div>
+    <script src="newFile.js"></script>
   </body>
 </html>
